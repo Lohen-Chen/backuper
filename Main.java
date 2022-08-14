@@ -13,8 +13,8 @@ public class Main {
                         int day = Calendar.getInstance().get(Calendar.DAY_OF_YEAR);
                         int year = Calendar.getInstance().get(Calendar.YEAR);
                         int minute = Calendar.getInstance().get(Calendar.MINUTE);
-                        final String pathToFolder = "C:/Users/Lohen/Desktop/server";
-                        final FileOutputStream fos = new FileOutputStream("C:/Users/Lohen/Desktop/worldbackups" + day + year + minute + ".zip");
+                        final String pathToFolder = "PATH TO INPUT DIRECTORY";
+                        final FileOutputStream fos = new FileOutputStream("PATH TO OUTPUT DIRECTORY" + day + year + minute + ".zip");
                         final ZipOutputStream zipOut = new ZipOutputStream(fos);
                         final File fileToZip = new File(pathToFolder);
                         System.out.println("backing up");
